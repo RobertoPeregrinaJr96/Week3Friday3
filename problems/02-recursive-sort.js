@@ -6,21 +6,8 @@
 */
 
 
-const sort = (nums, arr = []) => {
-    if (!nums.length) return arr // base case
-    let max = 0 // what we are comparing
-    let i = 0   // our count for the loop
-    let j = 0   // where we are pointing to in the indices
-    while (i < nums.length  ) {   // looping through nums array
-        if (max < nums[i]) {    // conditional to see what is the biggest number
-            max = nums[i]   // reassigning max to whatever is greater then it
-            j = nums.indexOf(max) // moves our pointer to the indices
-        }
-        i++
-    }
-    nums.splice(j, 1)
-    arr.unshift(max)
-    return sort(nums, arr)
+const sort = (nums) => {
+
 }
 
 console.log(sort([])) // prints []

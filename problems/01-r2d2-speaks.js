@@ -16,16 +16,6 @@
 
 function r2d2Speaks(code) {
     // Your code here
-    code.forEach(num => {
-        if (num === 0) {
-            console.log("beep")
-            setTimeout(() => { }, 400)
-        }
-        if (num === 1) {
-            console.log("boop")
-            setTimeout(() => { }, 800)
-        }
-    });
 }
 
 let code = [0, 1, 1, 0];

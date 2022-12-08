@@ -12,17 +12,7 @@
 */
 
 function dynamicSlice(start, end) {
-  // Your code here
-  let result = []
-  if (start < 0) start = 0
-  return function (arr) {
-    if (end > arr.length) end = arr.length
-    for (let i = start; i < end; i++) {
-      const element = arr[i];
-      if (start < end) result.push(element)
-    }
-    return result
-  }
+
 
 }
 

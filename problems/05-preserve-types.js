@@ -17,15 +17,7 @@ Examples:
 */
 
 function preserveTypes(array) {
-    let result = []
-    return function (...type) {
-        array.forEach(element => {
-            type.forEach(te => {
-                if (typeof element === te) result.push(element)
-            })
-        })
-        return result
-    }
+
 }
 
 const preserveFunc = preserveTypes([1, 'one', 2, 'two', 3, 'three']);
