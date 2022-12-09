@@ -15,7 +15,18 @@
 */
 
 function r2d2Speaks(code) {
-    // Your code here
+
+    if (!code.length) return
+
+    if (code[0] === 0) {
+        console.log("beep")
+        setTimeout(() => { }, 400)
+    } else {
+        console.log("boop")
+        setTimeout(() => { }, 800)
+    }
+    code = code.slice(1)
+    return r2d2Speaks(code)
 }
 
 let code = [0, 1, 1, 0];

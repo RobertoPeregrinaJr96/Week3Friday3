@@ -16,17 +16,17 @@ function dynamicSlice(start, end) {
 
 }
 
-const slicer = dynamicSlice(1, 3);
-console.log(slicer([0, 1, 2, 3])); // prints [ 1, 2 ]
+// const slicer = dynamicSlice(1, 3);
+// console.log(slicer([0, 1, 2, 3])); // prints [ 1, 2 ]
 
-const slicer2 = dynamicSlice(2, 7);
-console.log(slicer2(['kittens', 'puppies', 'cats', 'dogs'])); // prints [ 'cats', 'dogs' ]
+// const slicer2 = dynamicSlice(2, 7);
+// console.log(slicer2(['kittens', 'puppies', 'cats', 'dogs'])); // prints [ 'cats', 'dogs' ]
 
-const slicer3 = dynamicSlice(-10, 2);
-console.log(slicer3([99, 40, 131, 8])); // prints [ 99, 40 ]
+// const slicer3 = dynamicSlice(-10, 2);
+// console.log(slicer3([99, 40, 131, 8])); // prints [ 99, 40 ]
 
-const slicer4 = dynamicSlice(2, 5);
-console.log(slicer4([2, 'hello', false, 11, 'goodbye']));
+// const slicer4 = dynamicSlice(2, 5);
+// console.log(slicer4([2, 'hello', false, 11, 'goodbye']));
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
   module.exports = dynamicSlice;
